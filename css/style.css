@@ -85,3 +85,15 @@ h1
   }
  
  
+#add-button {
+  padding-inline: 12px;
+  background-color: #ECE9E1;
+  margin-top: 20px;
+}
+
+#shopping-list li button {
+  border:none;
+  background-color: #ECE9E1;
+
+}
+

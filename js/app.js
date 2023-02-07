@@ -6,7 +6,7 @@ const buttonAddElement = document.getElementById('add-button');
 const ulShoppingListElement = document.getElementById('shopping-list');
 
 //eventListner som lytter på click hendelse på knapp
-// lese verdi av input text og legge til i list (Dette er fra Carlo sin gihub må prøve den selv)
+// leser verdi av input og legger til i liste. 
 buttonAddElement.addEventListener('click', renderList);
 window.addEventListener('keyup', (event) => {
     if(event.code === 'Enter') {
@@ -20,5 +20,13 @@ window.addEventListener('keyup', (event) => {
 function renderList() {
     const liElement = document.createElement('li');
     liElement.textContent = inputElement.value;
+    // bygge en knapp, for å fjerne ting fra listen igjen. Legge til og ta bort. 
+    const buttonRemove = document.createElement('button');
+    buttonRemove.textContent = '-';
+    liElement.appendChild(buttonRemove)
     ulShoppingListElement.appendChild(liElement);
+    buttonRemove.addEventListener('click', () => {
+        console.log(liElement)
+        ulShoppingListElement.removeChild(liElement);
+    })
 }
