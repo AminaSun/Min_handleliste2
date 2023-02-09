@@ -49,8 +49,9 @@ h1
     font-family: 'Inter', sans-serif;
      
   }
+
   .div1  {
-    width: 30%;
+    width: 8rem;
     height: 10rem;
     background-color: #FCF5DB;
     display: flex;
@@ -59,9 +60,11 @@ h1
     text-align: center;
     border-radius: 14px;
     flex-direction: column;
+    font-size: 20px;
   }
+
   .div2 {
-    width: 30%;
+    width: 20rem;
     height: 80vh;
     background-color: #FCF5DB;
     display: flex;
@@ -70,6 +73,7 @@ h1
     text-align: center;
     border-radius: 14px;
     flex-direction: column;
+    font-size: 20px;
     
   }
 
@@ -84,7 +88,8 @@ h1
     
   }
  
- 
+ /* Under her er stylingen til knapper og lister*/
+
 #add-button {
   padding-inline: 12px;
   background-color: #ECE9E1;
@@ -93,7 +98,24 @@ h1
 
 #shopping-list li button {
   border:none;
-  background-color: #ECE9E1;
-
+  background: none;
+  list-style-image: none;
+  font-size: 20px;
 }
 
+
+#shopping-list {
+  list-style-type: none;
+}
+
+/* inputbox*/
+
+input[type=text] {
+  border: none;
+  background-color: #ECE9E1;
+  border-radius: 6px;
+  height: 28px;
+  width: 12rem;
+  
+
+}

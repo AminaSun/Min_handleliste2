@@ -22,11 +22,12 @@ function renderList() {
     liElement.textContent = inputElement.value;
     // bygge en knapp, for å fjerne ting fra listen igjen. Legge til og ta bort. 
     const buttonRemove = document.createElement('button');
-    buttonRemove.textContent = '-';
+    buttonRemove.textContent = 'x';
     liElement.appendChild(buttonRemove)
     ulShoppingListElement.appendChild(liElement);
     buttonRemove.addEventListener('click', () => {
         console.log(liElement)
         ulShoppingListElement.removeChild(liElement);
     })
+    
 }
